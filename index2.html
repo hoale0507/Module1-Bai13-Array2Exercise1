@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2 số chẵn
+     let text = prompt("Input number list without any space");
+     let arr = text.split('');
+    let arrLength = arr.length;
+     for(let i = 0; i < arrLength; i++) {
+         if( parseInt(arr[i])%2 == 0 && parseInt(arr[i+1])%2 == 0){
+             arr.splice(i+1,0,'-');
+             arrLength++;
+         }
+         console.log(arr);
+     }
+     console.log(arr);
+
+</script>
+</body>
+</html>
